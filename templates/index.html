@@ -3,91 +3,84 @@
 <head>  
     <title>ASCII-ART-WEB</title>  
    <style>
-       body {
-           background: url("9.jpg");
-           background-attachment: fixed;
-   
-         justify-content: center;
-        align-items: center;
-  
-}
- .form {
-     width:900px;
-     padding: 32px;
-     border-radius: 20px;
-     box-shadow: 0 4px 16px #ccc;
-     font-family: sans-serif;
-     letter-spacing: 1px;
+    html {
 
- }
- 
- 
- .form_input,
- .form_button {
-     font-family: sans-serif;
-     letter-spacing: 1px;
-     font-size: 16px;
+    height: 100%;
+
+    }
+    h1 {
+        background-color: rgba(253, 253, 253, 0.89); 
+        font-size: 300%;
+       
+       
+       
+        text-align: center;
+       
+        
+    }
+    body {
+        background-color: rgba(238, 241, 60, 0.89);
+        width: 100%;
+        height:45%;
+        color: rgb(2, 2, 1);
+        display: block;
+        padding-top: 2%;
+        margin: 0%;
+        text-align: center;
+        font-family: "Cutive Mono", monospace;
+    }
+    form {
+        height: 20%;
+        
+    }
+    footer {
+        background-color: cornsilk;
+            
+             height: 300%;
+
+             width: 300%;
+
+             text-align: left;
+
+             display: block;
+
+             margin: 0 auto;
+        
+    }
+    .input {
+        border-radius: 8px;
+        height:30px;
+        width: 300px;
+        padding:2px;
+        border:2px solid #000;
+    }
+    .font {
+        border-radius: 10%;
+        margin:2px;
+        height:20px;
+        width: 100px;
+        border:2px solid #000;
+        border-radius: 8px;
+    }
     
-
- }
-
- .form_title {
-    text-align: center;
-    margin: 0 0 32px 0;
-    font-weight: normal;
-    width:900px;
-    padding: 32px;
- 
-
- }
- .form_group {
-     position: relative;
-     margin-bottom: 32px;
- }
- 
-.form_input {
-    width:900px;
-   
-    padding: 0 0 10px 0;
-    border:none;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
-    outline: none;
-    transition: 0.3s;
-   
-}
-.form_input : focus {
-    border-bottom: 1px solid #1a73a8;
-}
-.form_button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #0071f0;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.form_button: focus,
-.form_button: hover {
-    background-color: rgba(0, 113, 248, 0.7);
-}
+    
    </style>  
 </head>
 <body>
     
- <h1 class="form_title">ASCII-ART-WEB</h1>
+ <h1 >ASCII-ART-WEB</h1>
 <form method="POST" class="form">
 
 
-    <div class="form_group">     
-     <input type="text" class="form_input" placeholder="Type something" name="text">
+    <div class="form_group">    
+
+    <input type="text" class="input" placeholder="Type something" name="text">
      
     </div>
-
+ 
     <div class="form_group">
-    <select class="form_input" name="fonts" >
+    <select class="font" name="fonts" >
+       
     <option value="standard">standard</option>
     <option value="shadow">shadow</option>
     <option value="thinkertoy">thinkertoy</option>
@@ -95,11 +88,14 @@
     </div>
 
     
-    <button class="form_button">submit</button>
+    <button class="font">submit</button>
     
     
  </form>
- <pre>{{ . }}</pre>
+ <footer>
+ 
+ <pre class="section"><br>{{ . }}</pre>
+</footer>
 
 </body>
 
